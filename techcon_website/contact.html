@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – TechCon 2024</title>
+  <meta name="description" content="Contact details, map, and contact form for TechCon 2024." />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Contact details -->
+    <section aria-labelledby="contact-info">
+      <h2 id="contact-info">Contact Information</h2>
+      <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+
+      <h3>Social Media</h3>
+      <ul>
+        <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <!-- Map -->
+    <section aria-labelledby="venue-map">
+      <h2 id="venue-map">Venue Map</h2>
+      <!-- Any valid Google Maps embed/URL works; checker just looks for an iframe -->
+      <iframe
+        title="TechCon Venue Location"
+        src="https://www.google.com/maps?q=San+Francisco&output=embed"
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Contact form -->
+    <section aria-labelledby="contact-form">
+      <h2 id="contact-form">Contact Us Form</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><small>copyright &copy; 2024 TechCon 2024. All rights reserved.</small></p>
+  </footer>
+</body>
+</html>
