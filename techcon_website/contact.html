@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us – TechCon 2024</title>
-  <meta name="description" content="Contact details, map, and contact form for TechCon 2024." />
+  <title>Contact Us - TechCon 2024</title>
+  <meta name="description" content="Contact page for TechCon 2024 conference with map and contact form." />
 </head>
 <body>
   <!-- Header -->
@@ -22,25 +22,28 @@
 
   <!-- Main -->
   <main>
-    <!-- Contact details -->
-    <section aria-labelledby="contact-info">
-      <h2 id="contact-info">Contact Information</h2>
-      <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+    <!-- Email -->
+    <section>
+      <h2>Email Address</h2>
+      <p>Email us at:
+        <a href="mailto:contact@example.com">contact@example.com</a>
+      </p>
+    </section>
 
-      <h3>Social Media</h3>
+    <!-- Social Media Links -->
+    <section>
+      <h2>Follow Us</h2>
       <ul>
-        <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
-        <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
       </ul>
     </section>
 
     <!-- Map -->
-    <section aria-labelledby="venue-map">
-      <h2 id="venue-map">Venue Map</h2>
-      <!-- Any valid Google Maps embed/URL works; checker just looks for an iframe -->
+    <section>
+      <h2>Conference Venue</h2>
       <iframe
-        title="TechCon Venue Location"
         src="https://www.google.com/maps?q=San+Francisco&output=embed"
         width="600"
         height="450"
@@ -50,24 +53,18 @@
       </iframe>
     </section>
 
-    <!-- Contact form -->
-    <section aria-labelledby="contact-form">
-      <h2 id="contact-form">Contact Us Form</h2>
+    <!-- Contact Form -->
+    <section>
+      <h2>Contact Us Form</h2>
       <form action="#" method="post">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Send Message</button>
       </form>
